@@ -1,0 +1,71 @@
+\documentclass[twoside,12pt]{article}
+\pagestyle{myheadings}
+\markboth{}{} 
+\usepackage[left=1.5in,top=1in,right=1.5in]{geometry}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{ulem}
+\usepackage[safe]{tipa}
+\usepackage{linguex}
+\usepackage{philex}
+\renewcommand{\refdash}{}
+\usepackage{qtree}
+\usepackage{tree-dvips}
+\usepackage{setspace}
+\usepackage{pifont}
+\newcommand{\hand}{\ding{43}}
+\newcommand{\scissors}{\ding{34}}
+\onehalfspacing
+\usepackage{pslatex}
+\usepackage[none]{hyphenat}
+\usepackage{multirow}
+\usepackage{natbib}
+\usepackage{graphicx}
+\bibpunct[: ]{(}{)}{;}{a}{}{,}
+\newcommand{\BIBand}{\&}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{doi:#1}}
+\setlength{\bibsep}{12pt}
+\setlength{\bibhang}{0.25in}
+\bibliographystyle{linquiry2}
+\newcommand{\citenop}[1]{\citeauthor{#1} \citeyear{#1}}
+\newcommand{\posscitet}[1]{\citeauthor{#1}'s (\citeyear{#1})}
+\newcommand{\posscitenop}[1]{\citeauthor{#1}'s \citeyear{#1}}
+\raggedbottom
+\def\footnoterule{\kern-3pt \vfill \hrule width 2in \kern 2.6pt}
+\interfootnotelinepenalty=10000 %keep footnotes on same page
+\usepackage{pstricks,colortab}
+\begin{document}
+\sloppy
+\pagenumbering{roman}
+\begin{center}
+\thispagestyle{empty}
+\mbox{\Large{\textbf{Investigations of downward movement}}}\\
+\vspace{12pt}\mbox{\large{\textit{Tobin R. Skinner}}}\\
+\vspace{6pt}Department of Linguistics\\
+McGill University, Montr\'{e}al\\
+\vspace{12pt}B.A., University of Virginia, 2000\\
+M.A., Boston University, 2004\\
+\vspace{248pt}July 2009\\
+\vspace{18pt}\mbox{\sc{A thesis submitted to McGill University in partial fulfillment of}}\\
+\mbox{\sc{the requirements of the degree of}}\\
+\vspace{12pt}\mbox{\large{\sc{Doctor of Philosophy}}}\\
+\vspace{100pt}\normalsize \copyright ~~Tobin R. Skinner 2009\\
+\end{center}
+\clearpage
+\include{skinner_thesis_Abstract} \clearpage
+\include{skinner_thesis_Acknowledgements} \clearpage
+\tableofcontents\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\include{skinner_thesis_Chapter1-LaTeX} \clearpage
+\include{skinner_thesis_Chapter2-LaTeX} \clearpage
+\vspace*{\fill}\begin{center}[this page intentionally kind of blank]\end{center}\vspace*{\fill}\clearpage
+\include{skinner_thesis_Chapter3-LaTeX} \clearpage
+\include{skinner_thesis_Chapter4-LaTeX} \clearpage
+\include{skinner_thesis_Chapter5-LaTeX} \clearpage
+\vspace*{\fill}\begin{center}[this page intentionally kind of blank]\end{center}\vspace*{\fill}\clearpage
+\singlespacing
+\section*{}
+\addcontentsline{toc}{section}{\Large{References}}
+\bibliography{thesis}
+\end{document}
